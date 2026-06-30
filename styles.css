@@ -317,3 +317,39 @@ button, input, textarea, select { font: inherit; }
   .brand { min-width: 0; }
   .brand img { max-width: 210px; }
 }
+
+
+
+/* Final logo size override */
+.nav-shell {
+  height: 96px !important;
+}
+
+.brand {
+  min-width: 310px !important;
+}
+
+.brand img {
+  height: 72px !important;
+  width: auto !important;
+  max-width: 320px !important;
+  object-fit: contain !important;
+}
+
+@media (max-width: 820px) {
+  .nav-shell {
+    height: 82px !important;
+  }
+
+  .brand img {
+    height: 58px !important;
+    max-width: 260px !important;
+  }
+}
+
+@media (max-width: 520px) {
+  .brand img {
+    height: 54px !important;
+    max-width: 240px !important;
+  }
+}

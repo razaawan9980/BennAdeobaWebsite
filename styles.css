@@ -319,50 +319,62 @@ button, input, textarea, select { font: inherit; }
 }
 
 
-/* Balanced header + logo fix */
+
+
+
+/* Final correct logo size without making header huge */
 .nav-shell {
-  height: 78px !important;
-  gap: 20px !important;
+  height: 82px !important;
+  gap: 16px !important;
 }
 
 .brand {
-  min-width: 245px !important;
+  min-width: 280px !important;
   flex-shrink: 0 !important;
 }
 
 .brand img {
-  height: 54px !important;
+  height: 64px !important;
   width: auto !important;
-  max-width: 245px !important;
+  max-width: 285px !important;
   object-fit: contain !important;
 }
 
+/* Navbar spacing fix */
 .nav-links {
-  gap: 20px !important;
+  gap: 18px !important;
 }
 
 .nav-cta {
   white-space: nowrap !important;
-  flex-shrink: 0 !important;
-  padding: 12px 18px !important;
-  font-size: 1rem !important;
+  min-width: 175px !important;
+  text-align: center !important;
+  padding: 12px 16px !important;
 }
 
-/* Tablet/mobile */
+/* Mobile */
 @media (max-width: 820px) {
   .nav-shell {
-    height: 72px !important;
+    height: 74px !important;
+  }
+
+  .brand {
+    min-width: 220px !important;
   }
 
   .brand img {
-    height: 48px !important;
+    height: 52px !important;
     max-width: 220px !important;
   }
 }
 
 @media (max-width: 520px) {
+  .brand {
+    min-width: 180px !important;
+  }
+
   .brand img {
-    height: 44px !important;
-    max-width: 190px !important;
+    height: 46px !important;
+    max-width: 185px !important;
   }
 }
